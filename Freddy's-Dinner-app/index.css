@@ -1,0 +1,240 @@
+body {
+    margin: 0 auto;
+    width:500px;
+    font-family: "Smythe";
+} 
+
+p,h1,h2 {
+    margin:0;
+}
+
+.header{
+    width: 500px;
+    height: 140px;
+    background-image: url("images/image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-desc-container{
+    padding-left: 30px;
+}
+
+h1{
+    font-size: 2em;
+    margin:0;
+    font-weight: 100;
+    }
+
+.restaurant-desc{
+    font-size: 1em;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+/*--------------- main --------------*/
+
+.menu-container{
+    margin: 0 auto;
+    width: 450px;
+}
+
+.food-emoji{
+    font-size: 4em;
+    padding-right: 20px;
+}
+.food-element div {
+    display: flex;
+}
+
+.food-element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    
+    border-bottom: 1px solid lightgrey;
+}
+
+.desc-food-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    gap:10px;
+}
+
+.add-food-btn{
+    border-radius: 50%; 
+    border: 1px solid lightgray; 
+    text-align: center; 
+    padding: 10px; 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 18px; 
+    background-color: white; 
+    cursor: pointer;
+}
+.price{
+    font-weight: bold;
+}
+
+/*-------------------- Your Order -------------- */ 
+
+.order-container{
+    width: 450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.order-title{
+    padding: 25px 0;
+    align-self: center;
+}
+
+.displayed-order{
+    display: flex;
+    justify-content: space-between;
+     padding: 10px 0;
+}
+.displayed-order div {
+    display: flex;
+    gap: 10px;
+}
+.total-container{
+    border-top: 2px solid black;
+    padding: 25px 0;
+}
+
+.total-container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity-show{
+    font-weight: 100;
+    font-size: 0.75em;
+}
+
+.btn-order-remove{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #BBBBBB;
+    border: none;
+    background-color: white;
+    text-align: end;
+    cursor: pointer;
+    
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.complete-order-btn{
+    width: 100%;
+    background-color: #16DB99;
+    border: none;
+    padding: 20px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+/*------------- order form ---------*/ 
+
+.order-form{
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;;
+    margin: auto;
+    
+    background-color: white;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 20px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.order-form h2 {
+    padding-bottom: 20px;
+}
+.title-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.date-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    
+    
+}
+
+.month select,
+.year select {
+    width: 140px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+form input{
+    height: 40px;
+}
+
+.cvv-input input{
+    width: 295px;
+}
+
+.submit-order-btn{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.end-message-order{
+    color: #065F46;
+    background-color: #ECFDF5;
+    width: 100%;
+    padding: 25px 0;
+    margin-top: 20px;
+    text-align: center;
+    
+    font-size: 2em;
+}
